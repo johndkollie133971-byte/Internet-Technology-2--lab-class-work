@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+          <head>
+                    <title>Form Events</title>
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <script>
+                              $(document).ready(function () {
+                                        $("#myForm").submit(function () {
+                                                  alert("Form Submitted");
+                                        });
+
+                                        $("#name").focus(function () {
+                                                  $(this).css("background-color", "yellow");
+                                        });
+
+                                        $("#name").blur(function () {
+                                                  $(this).css("background-color", "white");
+                                        });
+                              });
+                    </script>
+          </head>
+
+          <body>
+
+                    <form id="myForm">
+                              Name: <input type="text" id="name"><br><br>
+                              <input type="submit" value="Submit">
+                    </form>
+
+          </body>
+
+</html>

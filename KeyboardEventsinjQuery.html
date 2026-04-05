@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+          <head>
+                    <title>Keyboard Events</title>
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <script>
+                              $(document).ready(function () {
+                                        $("#txt").keypress(function () {
+                                                  alert("Key Pressed");
+                                        });
+
+                                        $("#txt").keydown(function () {
+                                                  console.log("Key Down");
+                                        });
+
+                                        $("#txt").keyup(function () {
+                                                  console.log("Key Up");
+                                        });
+                              });
+                    </script>
+          </head>
+
+          <body>
+
+                    <input type="text" id="txt" placeholder="Type something">
+
+          </body>
+
+</html>

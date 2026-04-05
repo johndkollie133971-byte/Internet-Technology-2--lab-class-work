@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+          <head>
+                    <title>Mouse Events</title>
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <script>
+                              $(document).ready(function () {
+                                        $("#box").click(function () {
+                                                  alert("Mouse Clicked");
+                                        });
+
+                                        $("#box").mouseenter(function () {
+                                                  $(this).css("background-color", "yellow");
+                                        });
+
+                                        $("#box").mouseleave(function () {
+                                                  $(this).css("background-color", "lightblue");
+                                        });
+                              });
+                    </script>
+          </head>
+
+          <body>
+
+                    <div id="box" style="width:200px;height:100px;background:lightblue;">
+                              Hover or Click Me
+                    </div>
+
+          </body>
+
+</html>

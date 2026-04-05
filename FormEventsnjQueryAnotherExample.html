@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+          <head>
+                    <title>Form Events 2</title>
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <script>
+                              $(document).ready(function () {
+                                        $("#email").change(function () {
+                                                  alert("Input value changed");
+                                        });
+
+                                        $("#myForm").reset(function () {
+                                                  alert("Form Reset");
+                                        });
+                              });
+                    </script>
+          </head>
+
+          <body>
+
+                    <form id="myForm">
+                              Email: <input type="email" id="email"><br><br>
+                              <input type="reset" value="Reset">
+                    </form>
+
+          </body>
+
+</html>

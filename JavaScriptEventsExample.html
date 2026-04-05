@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+          <head>
+                    <title>JavaScript Events</title>
+          </head>
+
+          <body onload="pageLoaded()">
+
+                    <button onclick="clickEvent()">Click</button>
+                    <button ondblclick="doubleClick()">Double Click</button>
+                    <input type="text" onfocus="focusEvent()" onblur="blurEvent()">
+
+                    <script>
+                              function pageLoaded() {
+                                        alert("Page Loaded");
+                              }
+
+                              function clickEvent() {
+                                        alert("Button Clicked");
+                              }
+
+                              function doubleClick() {
+                                        alert("Button Double Clicked");
+                              }
+
+                              function focusEvent() {
+                                        alert("Input Focused");
+                              }
+
+                              function blurEvent() {
+                                        alert("Input Lost Focus");
+                              }
+                    </script>
+
+          </body>
+
+</html>
